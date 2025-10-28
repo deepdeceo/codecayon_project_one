@@ -65,7 +65,8 @@
             <section class="coupons px-3 mt-3">
                 <div class="coupons-header d-flex justify-content-between align-items-center mb-2">
                     <h6 class="mb-0">Coupons</h6>
-                    <a href="#" class="small text-muted">View all</a>
+                    <a href="#" class="small text-muted" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottomCoupons" aria-controls="offcanvasBottom">View all</a>
                 </div>
                 <div class="coupons-row" role="list">
                     <div class="coupon-card p-3 rounded-3" role="listitem">
@@ -446,7 +447,36 @@
             </div>
         </div>
     </div>
-
+    <!-- Offcanvash coupon  -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottomCoupons"
+        aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offers</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <div class="coupon-card p-3 rounded-3 mb-3">
+                <div class="coupon-left d-flex align-items-center gap-2">
+                    <div class="coupon-badge"> <i class="fas fa-sun"></i> </div>
+                    <div>
+                        <div class="coupon-title">Bank of America</div>
+                        <div class="coupon-sub">Use code #A125</div>
+                    </div>
+                </div>
+                <div class="coupon-off">30%<small>OFF</small></div>
+            </div>
+            <div class="coupon-card p-3 rounded-3 mb-3">
+                <div class="coupon-left d-flex align-items-center gap-2">
+                    <div class="coupon-badge"> <i class="fas fa-sun"></i> </div>
+                    <div>
+                        <div class="coupon-title">Bank of America</div>
+                        <div class="coupon-sub">Use code #A125</div>
+                    </div>
+                </div>
+                <div class="coupon-off">30%<small>OFF</small></div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap Js Min File -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- Custom js file -->

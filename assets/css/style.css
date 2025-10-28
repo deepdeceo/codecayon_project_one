@@ -531,7 +531,7 @@ header small {
 .product-card {
     border-radius: 12px;
     overflow: hidden;
-    border:none;
+    border: none;
 }
 
 .card-img-top {
