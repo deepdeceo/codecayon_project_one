@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FoodLover - multiple resturent html template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- Bootstrap Css min File -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- FontAwesome Css min File -->
@@ -28,195 +29,244 @@
                 </div>
             </div>
             <div class="icons d-flex gap-2">
-                <button class="btn btn-sm btn-light rounded-circle"><i class="fa-solid fa-bars"></i></button>
+                <button class="btn btn-sm btn-light rounded-circle"><i class="fa-solid fa-user"></i></button>
                 <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-                    class="btn btn-sm btn-light rounded-circle"><i class="fa-solid fa-braille"></i></i></button>
+                    class="btn btn-sm btn-light rounded-circle"><i class="fa-solid fa-bars"></i></button>
             </div>
         </header>
-        <section class="banner px-3">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://placehold.co/600x200" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://placehold.co/600x200" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://placehold.co/600x200" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-
-        <!-- Coupons carousel (start at requested insertion point) -->
-        <section class="coupons px-3 mt-3">
-            <div class="coupons-header d-flex justify-content-between align-items-center mb-2">
-                <h6 class="mb-0">Coupons</h6>
-                <a href="#" class="small text-muted">View all</a>
-            </div>
-            <div class="coupons-row" role="list">
-                <div class="coupon-card p-3 rounded-3" role="listitem">
-                    <div class="coupon-left d-flex align-items-center gap-2">
-                        <div class="coupon-badge"> <i class="fas fa-sun"></i> </div>
-                        <div>
-                            <div class="coupon-title">Bank of America</div>
-                            <div class="coupon-sub">Use code #A125</div>
+        <main class="margin-bottom25px">
+            <section class="banner px-3">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://placehold.co/600x200" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/600x200" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/600x200" class="d-block w-100" alt="...">
                         </div>
                     </div>
-                    <div class="coupon-off">30%<small>OFF</small></div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+            </section>
 
-                <div class="coupon-card p-3 rounded-3" role="listitem">
-                    <div class="coupon-left d-flex align-items-center gap-2">
-                        <div class="coupon-badge"> <i class="fas fa-sun"></i> </div>
-                        <div>
-                            <div class="coupon-title">Vidacard</div>
-                            <div class="coupon-sub">Use code #A125</div>
+            <!-- Coupons carousel (start at requested insertion point) -->
+            <section class="coupons px-3 mt-3">
+                <div class="coupons-header d-flex justify-content-between align-items-center mb-2">
+                    <h6 class="mb-0">Coupons</h6>
+                    <a href="#" class="small text-muted">View all</a>
+                </div>
+                <div class="coupons-row" role="list">
+                    <div class="coupon-card p-3 rounded-3" role="listitem">
+                        <div class="coupon-left d-flex align-items-center gap-2">
+                            <div class="coupon-badge"> <i class="fas fa-sun"></i> </div>
+                            <div>
+                                <div class="coupon-title">Bank of America</div>
+                                <div class="coupon-sub">Use code #A125</div>
+                            </div>
+                        </div>
+                        <div class="coupon-off">30%<small>OFF</small></div>
+                    </div>
+
+                    <div class="coupon-card p-3 rounded-3" role="listitem">
+                        <div class="coupon-left d-flex align-items-center gap-2">
+                            <div class="coupon-badge"> <i class="fas fa-sun"></i> </div>
+                            <div>
+                                <div class="coupon-title">Vidacard</div>
+                                <div class="coupon-sub">Use code #A125</div>
+                            </div>
+                        </div>
+                        <div class="coupon-off">30%<small>OFF</small></div>
+                    </div>
+
+                    <div class="coupon-card p-3 rounded-3" role="listitem">
+                        <div class="coupon-left d-flex align-items-center gap-2">
+                            <div class="coupon-badge"> <i class="fas fa-sun"></i> </div>
+                            <div>
+                                <div class="coupon-title">Visa</div>
+                                <div class="coupon-sub">Use code #V20</div>
+                            </div>
+                        </div>
+                        <div class="coupon-off">20%<small>OFF</small></div>
+                    </div>
+
+                    <div class="coupon-card p-3 rounded-3" role="listitem">
+                        <div class="coupon-left d-flex align-items-center gap-2">
+                            <div class="coupon-badge"> <i class="fas fa-sun"></i> </div>
+                            <div>
+                                <div class="coupon-title">Mastercard</div>
+                                <div class="coupon-sub">Save now</div>
+                            </div>
+                        </div>
+                        <div class="coupon-off">15%<small>OFF</small></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="search px-3 mt-3">
+                <div class="search-wrap">
+                    <span class="search-icon"><i class="fas fa-search"></i></span>
+                    <input id="searchInput" type="text" class="form-control search-input" placeholder="Search">
+                    <button class="filter-btn" id="filterBtn" aria-label="Filter"><i
+                            class="fas fa-sliders-h"></i></button>
+                </div>
+            </section>
+
+
+            <section class="categories px-2 mt-3 pb-2">
+                <div class="row g-3 px-2 cat-grid">
+                    <div class="col-3 text-center">
+                        <div class="cat-tile shadow-sm mx-auto p-3 rounded-3">
+                            <div class="cat-figure mb-2"><img src="https://placehold.co/40x40" alt=""></div>
+                            <div class="cat-label">Burger</div>
                         </div>
                     </div>
-                    <div class="coupon-off">30%<small>OFF</small></div>
-                </div>
-
-                <div class="coupon-card p-3 rounded-3" role="listitem">
-                    <div class="coupon-left d-flex align-items-center gap-2">
-                        <div class="coupon-badge"> <i class="fas fa-sun"></i> </div>
-                        <div>
-                            <div class="coupon-title">Visa</div>
-                            <div class="coupon-sub">Use code #V20</div>
+                    <div class="col-3 text-center">
+                        <div class="cat-tile shadow-sm mx-auto p-3 rounded-3">
+                            <div class="cat-figure mb-2"><img src="https://placehold.co/40x40" alt=""></div>
+                            <div class="cat-label">Taco</div>
                         </div>
                     </div>
-                    <div class="coupon-off">20%<small>OFF</small></div>
-                </div>
-
-                <div class="coupon-card p-3 rounded-3" role="listitem">
-                    <div class="coupon-left d-flex align-items-center gap-2">
-                        <div class="coupon-badge"> <i class="fas fa-sun"></i> </div>
-                        <div>
-                            <div class="coupon-title">Mastercard</div>
-                            <div class="coupon-sub">Save now</div>
+                    <div class="col-3 text-center">
+                        <div class="cat-tile shadow-sm mx-auto p-3 rounded-3">
+                            <div class="cat-figure mb-2"><img src="https://placehold.co/40x40" alt=""></div>
+                            <div class="cat-label">Burrito</div>
                         </div>
                     </div>
-                    <div class="coupon-off">15%<small>OFF</small></div>
-                </div>
-            </div>
-        </section>
+                    <div class="col-3 text-center">
+                        <div class="cat-tile shadow-sm mx-auto p-3 rounded-3">
+                            <div class="cat-figure mb-2"><img src="https://placehold.co/40x40" alt=""></div>
+                            <div class="cat-label">Drink</div>
+                        </div>
+                    </div>
 
-        <section class="search px-3 mt-3">
-            <div class="search-wrap">
-                <span class="search-icon"><i class="fas fa-search"></i></span>
-                <input id="searchInput" type="text" class="form-control search-input" placeholder="Search">
-                <button class="filter-btn" id="filterBtn" aria-label="Filter"><i class="fas fa-sliders-h"></i></button>
-            </div>
-        </section>
-
-
-        <section class="categories px-2 mt-3 pb-2">
-            <div class="row g-3 px-2 cat-grid">
-                <div class="col-3 text-center">
-                    <div class="cat-tile shadow-sm mx-auto p-3 rounded-3">
-                        <div class="cat-figure mb-2"><img src="https://placehold.co/40x40" alt=""></div>
-                        <div class="cat-label">Burger</div>
+                    <div class="col-3 text-center">
+                        <div class="cat-tile shadow-sm mx-auto p-3 rounded-3">
+                            <div class="cat-figure mb-2"><img src="https://placehold.co/40x40" alt=""></div>
+                            <div class="cat-label">Sandwich</div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-3 text-center">
-                    <div class="cat-tile shadow-sm mx-auto p-3 rounded-3">
-                        <div class="cat-figure mb-2"><img src="https://placehold.co/40x40" alt=""></div>
-                        <div class="cat-label">Taco</div>
+                    <div class="col-3 text-center">
+                        <div class="cat-tile shadow-sm mx-auto p-3 rounded-3">
+                            <div class="cat-figure mb-2"><img src="https://placehold.co/40x40" alt=""></div>
+                            <div class="cat-label">Pasta</div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-3 text-center">
-                    <div class="cat-tile shadow-sm mx-auto p-3 rounded-3">
-                        <div class="cat-figure mb-2"><img src="https://placehold.co/40x40" alt=""></div>
-                        <div class="cat-label">Burrito</div>
+                    <div class="col-3 text-center">
+                        <div class="cat-tile shadow-sm mx-auto p-3 rounded-3">
+                            <div class="cat-figure mb-2"><img src="https://placehold.co/40x40" alt=""></div>
+                            <div class="cat-label">Ice</div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-3 text-center">
-                    <div class="cat-tile shadow-sm mx-auto p-3 rounded-3">
-                        <div class="cat-figure mb-2"><img src="https://placehold.co/40x40" alt=""></div>
-                        <div class="cat-label">Drink</div>
-                    </div>
-                </div>
-
-                <div class="col-3 text-center">
-                    <div class="cat-tile shadow-sm mx-auto p-3 rounded-3">
-                        <div class="cat-figure mb-2"><img src="https://placehold.co/40x40" alt=""></div>
-                        <div class="cat-label">Sandwich</div>
-                    </div>
-                </div>
-                <div class="col-3 text-center">
-                    <div class="cat-tile shadow-sm mx-auto p-3 rounded-3">
-                        <div class="cat-figure mb-2"><img src="https://placehold.co/40x40" alt=""></div>
-                        <div class="cat-label">Pasta</div>
-                    </div>
-                </div>
-                <div class="col-3 text-center">
-                    <div class="cat-tile shadow-sm mx-auto p-3 rounded-3">
-                        <div class="cat-figure mb-2"><img src="https://placehold.co/40x40" alt=""></div>
-                        <div class="cat-label">Ice</div>
-                    </div>
-                </div>
-                <div class="col-3 text-center cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasmore"
-                    aria-controls="offcanvasBottom">
-                    <div class="cat-tile shadow-sm mx-auto p-3 rounded-3">
-                        <div class="cat-figure mb-2"><i class="fa-solid fa-bars"></i></div>
-                        <div class="cat-label">More</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="productcards px-3 mt-2">
-            <div class="biz-list d-flex flex-nowrap overflow-auto gap-3 pb-2">
-
-                <div class="biz-card rounded-3 shadow-sm overflow-hidden flex-shrink-0" style="width: 240px;">
-                    <div class="biz-banner" style="background-image:url('https://placehold.co/600x180/8b5cf6/fff');">
-                        <div class="badge-featured">Featured</div>
-                        <div class="open-pill">Open</div>
-                    </div>
-                    <div class="biz-body p-3 text-center">
-                        <img src="https://placehold.co/72x72/ffffff/10b981?text=LOGO"
-                            class="biz-logo rounded-circle shadow-sm" alt="logo">
-                        <h5 class="biz-name mt-2 mb-1">Kombucha <i class="fas fa-check-circle text-primary"></i>
-                        </h5>
-                        <div class="biz-meta d-flex justify-content-center gap-3 align-items-center text-muted small">
-                            <div><i class="fas fa-map-marker-alt"></i> Comilla</div>
-                            <div>•</div>
-                            <div><i class="fas fa-star text-warning"></i> 0 (0)</div>
+                    <div class="col-3 text-center cursor-pointer" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasmore" aria-controls="offcanvasBottom">
+                        <div class="cat-tile shadow-sm mx-auto p-3 rounded-3">
+                            <div class="cat-figure mb-2"><i class="fa-solid fa-bars"></i></div>
+                            <div class="cat-label">More</div>
                         </div>
                     </div>
                 </div>
-                <div class="biz-card rounded-3 shadow-sm overflow-hidden flex-shrink-0" style="width: 240px;">
-                    <div class="biz-banner" style="background-image:url('https://placehold.co/600x180/8b5cf6/fff');">
-                        <div class="badge-featured">Featured</div>
-                        <div class="open-pill">Open</div>
+            </section>
+
+            <section class="productcards px-3 mt-2">
+                <div class="biz-list d-flex flex-nowrap overflow-auto gap-3 pb-2">
+
+                    <div class="biz-card rounded-3 shadow-sm overflow-hidden flex-shrink-0" style="width: 240px;">
+                        <div class="biz-banner"
+                            style="background-image:url('https://placehold.co/600x180/8b5cf6/fff');">
+                            <div class="badge-featured">Featured</div>
+                            <div class="open-pill">Open</div>
+                        </div>
+                        <div class="biz-body p-3 text-center">
+                            <img src="https://placehold.co/72x72/ffffff/10b981?text=LOGO"
+                                class="biz-logo rounded-circle shadow-sm" alt="logo">
+                            <h5 class="biz-name mt-2 mb-1">Kombucha <i class="fas fa-check-circle text-primary"></i>
+                            </h5>
+                            <div
+                                class="biz-meta d-flex justify-content-center gap-3 align-items-center text-muted small">
+                                <div><i class="fas fa-map-marker-alt"></i> Comilla</div>
+                                <div>•</div>
+                                <div><i class="fas fa-star text-warning"></i> 0 (0)</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="biz-body p-3 text-center">
-                        <img src="https://placehold.co/72x72/ffffff/10b981?text=LOGO"
-                            class="biz-logo rounded-circle shadow-sm" alt="logo">
-                        <h5 class="biz-name mt-2 mb-1">Kombucha <i class="fas fa-check-circle text-primary"></i>
-                        </h5>
-                        <div class="biz-meta d-flex justify-content-center gap-3 align-items-center text-muted small">
-                            <div><i class="fas fa-map-marker-alt"></i> Comilla</div>
-                            <div>•</div>
-                            <div><i class="fas fa-star text-warning"></i> 0 (0)</div>
+                    <div class="biz-card rounded-3 shadow-sm overflow-hidden flex-shrink-0" style="width: 240px;">
+                        <div class="biz-banner"
+                            style="background-image:url('https://placehold.co/600x180/8b5cf6/fff');">
+                            <div class="badge-featured">Featured</div>
+                            <div class="open-pill">Open</div>
+                        </div>
+                        <div class="biz-body p-3 text-center">
+                            <img src="https://placehold.co/72x72/ffffff/10b981?text=LOGO"
+                                class="biz-logo rounded-circle shadow-sm" alt="logo">
+                            <h5 class="biz-name mt-2 mb-1">Kombucha <i class="fas fa-check-circle text-primary"></i>
+                            </h5>
+                            <div
+                                class="biz-meta d-flex justify-content-center gap-3 align-items-center text-muted small">
+                                <div><i class="fas fa-map-marker-alt"></i> Comilla</div>
+                                <div>•</div>
+                                <div><i class="fas fa-star text-warning"></i> 0 (0)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat other cards here (same structure) -->
+
+                </div>
+            </section>
+            <!-- Product Cards -->
+            <section class="px-2 mt-4">
+                <!-- Product card header -->
+                <div class="d-flex justify-content-between align-items-center mb-2 px-2">
+                    <h6 class="mb-0 fw-bold">Popular Near You</h6>
+                    <a href="#" class="small text-muted">View all</a>
+                </div>
+
+                <!-- Scrollable row -->
+                <div class="scroll-container">
+                    <!-- Chicken Burger -->
+                    <div class="card product-card shadow-sm rounded p-2 position-relative">
+                        <img src="https://placehold.co/250x160/8b5cf6/fff" class="card-img-top" alt="Chicken Burger">
+                        <div class="fav-icon rounded-4">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Chicken Burger</h6>
+                            <div class="text-warning small mb-1">⭐ 4.9</div>
+                            <div>
+                                <span class="price-old me-2">£10.00</span>
+                                <span class="price-new">£6.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beef Burger -->
+                    <div class="card product-card shadow-sm rounded p-2 position-relative">
+                        <img src="https://placehold.co/250x160/8b5cf6/fff" class="card-img-top" alt="Beef Burger">
+                        <div class="fav-icon rounded-4">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Beef Burger</h6>
+                            <div class="text-warning small mb-1">⭐ 4.9</div>
+                            <div>
+                                <span class="price-old me-2">£12.00</span>
+                                <span class="price-new">£10.00</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Repeat other cards here (same structure) -->
-
-            </div>
-        </section>
+            </section>
 
         </main>
 
@@ -230,15 +280,15 @@
                 </div>
                 <div class="nav-item">
                     <div class="nav-icon"><i class="far fa-heart"></i></div>
-                    <small>Favorites</small>
+                    <small>Grocery</small>
                 </div>
                 <div class="nav-item">
                     <div class="nav-icon"><i class="fas fa-receipt"></i></div>
-                    <small>Orders</small>
+                    <small>Pharmacy</small>
                 </div>
                 <div class="nav-item">
                     <div class="nav-icon"><i class="fas fa-user"></i></div>
-                    <small>Profile</small>
+                    <small>Parcel</small>
                 </div>
             </nav>
         </div>
@@ -247,14 +297,13 @@
 
     <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Select Category</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body small">
 
             <!-- Modules selection section (matches design screenshot) -->
             <section class="modules px-3 mt-3">
-                <h4 class="modules-title text-center">Select a type of module for your orders</h4>
                 <div class="modules-grid mt-3">
                     <div class="module-tile">
                         <img src="https://placehold.co/60x60/" alt="Grocery">
@@ -289,9 +338,7 @@
             </section>
         </div>
     </div>
-
-
-
+    <!-- Location Modal -->
     <!-- Modal -->
     <div class="modal fade" id="exampleModallocation" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -327,20 +374,17 @@
                             </div>
                         </label>
 
-                        <a href="new_location.html" class="btn add-location mt-2" type="button"><i
+                        <a href="new_location.html" class="btn add-location mt-2 p-2" type="button"><i
                                 class="fas fa-plus me-2"></i> Add New
                             Location</a>
                     </div>
                 </div>
                 <!-- sticky apply bar -->
                 <div class="apply-bar p-3">
-                    <button class="btn apply-btn w-100">Apply</button>
+                    <button class="btn btn-main w-100">Apply</button>
                 </div>
             </div>
         </div>
-    </div>
-
-
     </div>
     <!-- category More option -->
     <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasmore" aria-labelledby="offcanvasBottomLabel">

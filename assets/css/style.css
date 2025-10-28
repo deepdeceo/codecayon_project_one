@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*  Global css styles start  */
@@ -22,16 +23,18 @@
     background-color: var(--main_color_dark) !important;
     color: #fff;
 }
-.cursor-pointer{
+
+.cursor-pointer {
     cursor: pointer;
 }
+
 /* Mobile Layouts for mobile views */
 .mobile_layouts {
-    max-width: 600px;
-    position: relative;
     width: 100%;
-    margin: 0 auto;
-    height: 100vh;
+    max-width: 600px;
+    background: #fff;
+    overflow: hidden;
+    padding-bottom: calc(110px + env(safe-area-inset-bottom, 12px));
 }
 
 /* Splash Screen Styles */
@@ -527,7 +530,8 @@ header small {
 
 .product-card {
     border-radius: 12px;
-    overflow: hidden
+    overflow: hidden;
+    border:none;
 }
 
 .card-img-top {
@@ -607,4 +611,46 @@ header small {
     }
 }
 
-/* remove old category-list scrollbar rules (now static grid) */
+/* Home Product Cards */
+/* Horizontal scroll for mobile */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    scroll-snap-align: start;
+}
+
+.price-old {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.price-new {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.fav-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px;
+    color: var(--main_color);
+}
+
+.card-img-top {
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
