@@ -4,15 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FoodLover - multiple resturent html template</title>
     <!-- Bootstrap Css min File -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- FontAwesome Css min File -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Custom Css File -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+    <div class="mobile_layouts bg-white">
+        <div class="splash-screen shadow-lg col-10 col-sm-6 col-md-4">
+            <div class="logo-icon">⚡</div>
+            <h2 class="fw-bold mb-1">Food Lover</h2>
+            <div class="version">Version 1.1.0</div>
+            <div class="tagline">
+                As fast as lightning,<br>
+                as delicious as thunder!
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap Js Min File -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Custom js file -->
+    <script>
+
+        // After 5 seconds, redirect to index.html
+        setTimeout(() => {
+            window.location.href = "home.html";
+        }, 5000);
+
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodLover - multiple resturent html template</title>
+    <!-- Bootstrap Css min File -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- FontAwesome Css min File -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Custom Css File -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Main container for the mobile view, using Bootstrap classes -->
+    <div class="mobile_layouts bg-white">
+        <div class="bg-white shadow-lg rounded-4 overflow-hidden" style="width: 100%; height: 100%;">
+
+            <!-- Screen 1: Wide Selection -->
+            <div class="screen active" id="screen-1">
+                <div class="content">
+                    <!-- Using a placeholder image for the "Wide Selection" screen -->
+                    <img src="https://placehold.co/250x150/ff6347/ffffff?text=Restaurant+Hub" class="img-mock"
+                        alt="Restaurant Selection Icon" />
+                    <div class="text-danger fs-3 fw-bold mb-1">Wide Selection</div>
+                    <div class="text-secondary fs-6 px-4">More than 400 restaurants nationwide.</div>
+                </div>
+
+                <div class="footer-controls p-4">
+                    <div class="dots d-flex justify-content-center mb-4">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="btn btn-main btn-lg  w-100" onclick="nextScreen()">Next</button>
+                    <a href="#" class="text-secondary mt-3 d-inline-block text-decoration-none">Skip</a>
+                </div>
+            </div>
+
+            <!-- Screen 2: Fast Delivery (Starts hidden) -->
+            <div class="screen" id="screen-2">
+                <div class="content">
+                    <!-- Using a placeholder image for the "Fast Delivery" screen -->
+                    <img src="https://placehold.co/250x150/ff6347/ffffff?text=Fast+Rocket" class="img-mock"
+                        alt="Fast Delivery Rocket Icon" />
+                    <div class="text-danger fs-3 fw-bold mb-1">Fast Delivery</div>
+                    <div class="text-secondary fs-6 px-4">Receive goods after 10 minutes.</div>
+                </div>
+
+                <div class="footer-controls p-4">
+                    <div class="dots d-flex justify-content-center mb-4">
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="btn btn-main btn-lg  w-100" onclick="nextScreen()">Next</button>
+                    <a href="#" class="text-secondary mt-3 d-inline-block text-decoration-none">Skip</a>
+                </div>
+            </div>
+
+            <!-- Screen 3: Easy Payment (Generic Screen, Starts hidden) -->
+            <div class="screen" id="screen-3">
+                <div class="content">
+                    <!-- Using a placeholder image for the final screen -->
+                    <img src="https://placehold.co/250x150/ff6347/ffffff?text=Secure+Payment" class="img-mock"
+                        alt="Payment Icon" />
+                    <div class="text-danger fs-3 fw-bold mb-1">Easy Payment</div>
+                    <div class="text-secondary fs-6 px-4">Pay securely with multiple options.</div>
+                </div>
+
+                <div class="footer-controls p-4">
+                    <div class="dots d-flex justify-content-center mb-4">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                    </div>
+                    <!-- Change text to 'Get Started' on the last screen -->
+                    <a href="home.html" class="btn btn-main btn-lg  w-100">Get
+                        Started</a>
+                    <a href="#" class="text-secondary mt-3 d-inline-block text-decoration-none">Skip</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap Js Min File -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Custom js file -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        let currentScreen = 1;
+        const totalScreens = 3;
+
+        function updateScreen() {
+            // 1. Hide all screens and remove active dot styling across all dot sets
+            document.querySelectorAll('.screen').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.dots .dot').forEach(el => el.classList.remove('active'));
+
+            // 2. Find the current screen element
+            const currentElement = document.getElementById(`screen-${currentScreen}`);
+
+            if (currentElement) {
+                // 3. Show the current screen
+                currentElement.classList.add('active');
+
+                // 4. Update the active dot within the current screen's footer
+                const currentDots = currentElement.querySelector('.dots').querySelectorAll('.dot');
+                if (currentDots[currentScreen - 1]) {
+                    // Activate the correct dot index (currentScreen is 1-based, array is 0-based)
+                    currentDots[currentScreen - 1].classList.add('active');
+                }
+            } else {
+                // Handle the completion case (currentScreen > totalScreens)
+                console.log("Onboarding complete! Redirecting to home screen.");
+                // For this demo, we loop back to the first screen
+                currentScreen = 1;
+                updateScreen(); // Recurse to show the first screen
+            }
+        }
+
+        function nextScreen() {
+            if (currentScreen < totalScreens) {
+                currentScreen++;
+                updateScreen();
+            } else {
+                // If it's the last screen, trigger the completion logic
+                currentScreen++;
+                updateScreen();
+            }
+        }
+    </script>
+</body>
+
+</html>
