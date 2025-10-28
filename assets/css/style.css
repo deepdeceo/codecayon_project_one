@@ -3,6 +3,7 @@
     /* Tomato red */
     --custom-light-dot: #f8d7da;
     --main_color_dark: #e04d3b;
+    --white: #fff;
 }
 
 * {
@@ -653,4 +654,36 @@ header small {
     height: 160px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+/* Login page  */
+.auth-header {
+    line-height: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(var(--white), 1);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    padding-top: 30px;
+    background-color: rgba(var(--white), 1);
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 600px;
+    width: 100%;
+}
+
+.auth-header .header-panel .logo {
+    display: block;
+    position: absolute;
+    margin-top: -10px;
+    height: 35px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+.auth-header .header-panel .logo-dark {
+    display: none;
 }
